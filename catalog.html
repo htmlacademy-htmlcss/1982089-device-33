@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Каталог</title>
   </head>
   <body>
@@ -34,16 +35,16 @@
         <nav class="page_navigation">
             <ul class="navigation_list">
                 <li class="navigation_item">
-                    <a class="ink_navigation link_navigation_catalog" href="#">Каталог товаров</a>
+                    <a class="link_navigation" href="#">Каталог товаров</a>
                 </li>
                 <li class="navigation_item">
                     <a class="link_navigation" href="#">Доставка</a>
                 </li>
                 <li class="navigation_item">
-                    <a class="ink_navigation" href="#">Гарантия</a>
+                    <a class="link_navigation" href="#">Гарантия</a>
                 </li>
                 <li class="navigation_item">
-                    <a class="ink_navigation" href="#">Контакты</a>ми
+                    <a class="link_navigation" href="#">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -121,8 +122,9 @@
               <button class="button" type="submit">Показать</button>
             </form>
         </section>
-        <section class="catalog_filters">
-            <h2 class="catalog_subtitle">сортировка:</h2>
+        <section class="catalog_filter">
+            <div class="filter-box">
+              <h2 class="catalog_subtitle">сортировка:</h2>
             <select class="select_control" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
                 <option value="cheap">Дешевые</option>
@@ -130,6 +132,7 @@
             </select>
             <button  class="button_regulation button_regulation_max" type="button"><span class="visually_hidden">По возрастанию</span></button>
             <button  class="button_regulation button_regulation_min" type="button"><span class="visually_hidden">По убыванию</span></button>
+            </div>
             <ul class="product_list">
                 <li class="product_item">
                     <a class="product_item_link" href="product.html">
