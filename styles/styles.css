@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.page_header {
+    background-color: #FFE17F;
+}
+
+.button_search {
+    font-size: 16px;
+    line-height: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.link_opportunity {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link_navigation {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.device_number {
+    font-size: 180px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.title_for_device_description {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+.device_description {
+    color: #444444;
+}
+
+.link_more,
+.link_cross {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.number_value_item {
+    font-size: 36px;
+}
+
+.value_name {
+    font-size: 16px;
+    color: #444444;
+}
+
+.variety_item_link {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    color: inherit;
+    text-decoration: none;
+}
+
+.variety_item_img {
+    background-color: #FFE17F;
+}
+
+.suggestion_button {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.suggestion_button_current {
+    color: #FFE17F;
+}
+
+.suggestion_title_current {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+.text_suggestion {
+    color: #444444;
+}
+
+.suggestion_section {
+    background-color: #F0F0F0;
+}
+
+.important_message {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.important_information_section {
+    background-color: #F0F0F0;
+}
+
+.decorate_image_truck {
+    background-color: #FFE17F;
+}
+
+.about_company_title,
+.contact_information {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+.text_about_company,
+.preview_text_contact,
+.contacts_schedule_item {
+    color: #444444;
+}
+
+.transport_companies_list {
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.address_title,
+.time_schedule {
+    font-size: 24px;
+    font-weight: 700;
+    color: #444444;
+}
+
+.contacts_address {
+    font-style: normal;
+    color: #444444;
+}
+
+.contacts_phone {
+    color: inherit;
+}
+
+.subscription_description,
+.useful_note {
+    color: #444444;
+}
+
+.subscription_section {
+    background-color: #F0F0F0;
+}
+
+.subscription_title {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+.button_subscription {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.page_footer {
+    color: #ffffff;
+    background-color: #444444;
+}
+
+.contacts_address_text_footer {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.link_footer {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.phone-text,
+.contacts_phone_footer {
+    font-size: 16px;
+    line-height: 20px;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.media_footer {
+    color: inherit;
+    text-decoration: none;
+}
+
+.catalog_header_title {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+.breadcrumbs_link {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 19px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.catalog_subtitle {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.catalog_filters {
+    background-color: #F0F0F0;
+}
+
+.catalog_filter_title {
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.color_checkbox,
+.bluetooth_radio {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.button {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+}
+
+.filter-box {
+    background-color: #F0F0F0;
+}
+
+.product_item_image {
+    background-color: #F0F0F0;
+}
+
+.product_item_link {
+    line-height: 20;
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+}
+
+.product_item_price {
+    line-height: 21px;
+    color: #444444;
+}
+
+.button_download_more {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border-color: 3px solid #E5E5E5;
+}
+
+.pagination {
+    background-color: #EBEBEB;
+}
+
+.pagination_regulator {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.pagination_link {
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    text-decoration: none;
+}
+
+/* Для скрытия разметки */
+/* .visually_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} */
