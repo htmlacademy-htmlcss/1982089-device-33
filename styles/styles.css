@@ -30,7 +30,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -40,6 +48,47 @@ body {
 
 .page_header {
     background-color: #FFE17F;
+}
+
+.header_container {
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.main_opportunities_container {
+    display: flex;
+}
+
+.form_for_searching {
+    width: 517px;
+    margin-left: 26px;
+}
+
+.opportunities_list,
+.navigation_list,
+.variety_list,
+.suggestion_section_buttons,
+.transport_companies_list,
+.contacts_schedule,
+.link_footer_list,
+.media_footer_list,
+.breadcrumbs_list,
+.catalog_filter_list,
+.bluetooth_list,
+.product_list,
+.pagination_list,
+.slider_pagination_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page_navigation {
+    margin: 0;
+    padding: 0;
 }
 
 .button_search {
@@ -77,6 +126,17 @@ body {
     font-weight: 800;
 }
 
+.main_container {
+    flex-grow: 1;
+}
+
+.catalog_item {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
 .device_description {
     color: #444444;
 }
@@ -94,11 +154,25 @@ body {
 
 .number_value_item {
     font-size: 36px;
+    font-weight: 400;
 }
 
 .value_name {
     font-size: 16px;
     color: #444444;
+}
+
+.variety_device_section {
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.variety_list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
 .variety_item_link {
@@ -112,6 +186,19 @@ body {
 
 .variety_item_img {
     background-color: #FFE17F;
+}
+
+.suggestion_container {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.left_column {
+    width: 287px;
+    margin: 0;
+    padding: 0;
 }
 
 .suggestion_button {
@@ -154,6 +241,17 @@ body {
     background-color: #F0F0F0;
 }
 
+.important_information_section {
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.important_information_container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .decorate_image_truck {
     background-color: #FFE17F;
 }
@@ -172,7 +270,7 @@ body {
     color: #444444;
 }
 
-.transport_companies_list {
+.transport_company_item {
     line-height: 20px;
     font-weight: 700;
 }
@@ -193,9 +291,45 @@ body {
     color: inherit;
 }
 
-.subscription_description,
+.index_columns {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.information_about_company {
+    width: 520px;
+    margin-right: 108px;
+}
+
+.contacts_section {
+    width: 532px;
+}
+
+.subscription_description {
+    width: 560px;
+    color: #444444;
+}
+
 .useful_note {
     color: #444444;
+}
+
+.subscription_container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.fisrt_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second_row {
+    display: flex;
+    justify-content: space-between;
 }
 
 .subscription_section {
@@ -222,10 +356,21 @@ body {
     background-color: #444444;
 }
 
-.contacts_address_text_footer {
+.footer_container {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.address_text_footer {
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
+}
+
+.adress_section_footer {
+    width: 239px;
+    margin-right: auto;
 }
 
 .link_footer {
@@ -236,6 +381,16 @@ body {
     color: inherit;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.center_footer {
+    width: 444px;
+    margin-left: 112px;
+}
+
+.extra_information {
+    width: 175px;;
+    margin-left: auto;
 }
 
 .phone-text,
@@ -249,6 +404,12 @@ body {
 .media_footer {
     color: inherit;
     text-decoration: none;
+}
+
+.catalog_header {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 35px 21px 35px 60px;
 }
 
 .catalog_header_title {
@@ -266,6 +427,22 @@ body {
     text-decoration: none;
 }
 
+.catalog_container {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.catalog_filters {
+    width: 320px;
+    margin: 0 60px;
+}
+
+.filter-box {
+    display: flex;
+    justify-content: space-between;
+}
+
 .catalog_subtitle {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
@@ -274,8 +451,17 @@ body {
     text-transform: uppercase;
 }
 
-.catalog_filters {
+.catalog_section {
     background-color: #F0F0F0;
+}
+
+.catalog_page {
+    background-color: #ffffff;
+}
+
+.catalog_filter {
+    width: 840px;
+    padding: 0 40px;
 }
 
 .catalog_filter_title {
@@ -298,6 +484,10 @@ body {
 
 .filter-box {
     background-color: #F0F0F0;
+}
+
+.product_item {
+    width: 360px;
 }
 
 .product_item_image {
@@ -323,11 +513,13 @@ body {
     font-weight: 800;
     text-transform: uppercase;
     background-color: #ffffff;
-    border-color: 3px solid #E5E5E5;
+    border: 3px solid #E5E5E5;
 }
 
-.pagination {
+.pagination_container {
     background-color: #EBEBEB;
+    width: 760px;
+    margin: 0 auto;
 }
 
 .pagination_regulator {
@@ -348,7 +540,7 @@ body {
 }
 
 /* Для скрытия разметки */
-/* .visually_hidden {
+.visually_hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -359,4 +551,4 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-} */
+}
