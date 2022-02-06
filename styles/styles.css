@@ -67,9 +67,23 @@ body {
     margin-left: 26px;
 }
 
-.opportunities_list {
+.opportunities_list,
+.navigation_list,
+.variety_list,
+.suggestion_section_buttons,
+.transport_companies_list,
+.contacts_schedule,
+.link_footer_list,
+.media_footer_list,
+.breadcrumbs_list,
+.catalog_filter_list,
+.bluetooth_list,
+.product_list,
+.pagination_list,
+.slider_pagination_list {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .page_navigation {
@@ -256,7 +270,7 @@ body {
     color: #444444;
 }
 
-.transport_companies_list {
+.transport_company_item {
     line-height: 20px;
     font-weight: 700;
 }
@@ -359,16 +373,6 @@ body {
     margin-right: auto;
 }
 
-.link_footer_list {
-    margin: 0;
-    padding: 0;
-}
-
-.media_footer_list {
-    margin: 0;
-    padding: 0;
-}
-
 .link_footer {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -413,11 +417,6 @@ body {
     font-size: 50px;
     line-height: 50px;
     font-weight: 800;
-}
-
-.breadcrumbs_list {
-    margin: 0;
-    padding: 0;
 }
 
 .breadcrumbs_link {
@@ -514,7 +513,7 @@ body {
     font-weight: 800;
     text-transform: uppercase;
     background-color: #ffffff;
-    border-color: 3px solid #E5E5E5;
+    border: 3px solid #E5E5E5;
 }
 
 .pagination_container {
