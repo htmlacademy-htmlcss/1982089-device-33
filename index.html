@@ -7,47 +7,45 @@
   </head>
     <body>
         <header class="page_header">
-          <div class="header_container">
-            <a class="link_logo" href="#">
-              <img class="logo_header" src="images/logo_header.svg" alt="Логотип" width="145" height="36">
-            </a>
-            <section class="main_opportunities main_opportunities_container">
-              <form class="form_for_searching" action="https://echo.htmlacademy.ru/" method="post">
-                <p class="searching">
-                  <label class="visually_hidden" for="search_field">Текст поиска</label>
-                  <input type="text" name="search_field" id="search_field" placeholder="Текст поиска">
-                  <a class="button_search" href="#">Найти</a>
-                </p>
-              </form>
-                <ul class="opportunities_list">
-                    <li class="opportunity_item">
-                        <a class="link_opportunity" href="#">Войти</a>
-                    </li>
-                    <li class="opportunity_item">
-                        <a class="link_opportunity" href="#">Сравнить</a>
-                    </li>
-                    <li class="opportunity_item">
-                        <a class="link_opportunity" href="#">Корзина</a>
-                    </li>
-                </ul>
-            </section>
-            <nav class="page_navigation">
-              <ul class="navigation_list">
-                  <li class="navigation_item">
-                      <a class="link_navigation" href="#">Каталог товаров</a>
-                  </li>
-                  <li class="navigation_item">
-                      <a class="link_navigation" href="#">Доставка</a>
-                  </li>
-                  <li class="navigation_item">
-                      <a class="link_navigation" href="#">Гарантия</a>
-                  </li>
-                  <li class="navigation_item">
-                      <a class="link_navigation" href="#">Контакты</a>
-                  </li>
-              </ul>
-            </nav>
-          </div>
+          <a class="link_logo" href="#">
+            <img class="logo_header" src="images/logo_header.svg" alt="Логотип" width="145" height="36">
+          </a>
+          <section class="main_opportunities">
+            <form class="form_for_searching" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="searching">
+                <label class="visually_hidden" for="search_field">Текст поиска</label>
+                <input type="text" name="search_field" id="search_field" placeholder="Текст поиска">
+                <a class="button_search" href="#">Найти</a>
+              </p>
+            </form>
+            <ul class="opportunities_list">
+              <li class="opportunity_item">
+                  <a class="link_opportunity" href="#">Войти</a>
+              </li>
+              <li class="opportunity_item">
+                  <a class="link_opportunity" href="#">Сравнить</a>
+              </li>
+              <li class="opportunity_item">
+                  <a class="link_opportunity" href="#">Корзина</a>
+              </li>
+          </ul>
+          </section>
+          <nav class="page_navigation">
+            <ul class="navigation_list">
+                <li class="navigation_item">
+                    <a class="link_navigation" href="#">Каталог товаров</a>
+                </li>
+                <li class="navigation_item">
+                    <a class="link_navigation" href="#">Доставка</a>
+                </li>
+                <li class="navigation_item">
+                    <a class="link_navigation" href="#">Гарантия</a>
+                </li>
+                <li class="navigation_item">
+                    <a class="link_navigation" href="#">Контакты</a>
+                </li>
+            </ul>
+          </nav>
         </header>
         <main class="main_container main_index">
           <div class="page_container">
@@ -65,38 +63,40 @@
               </div>
               <div class="item_information">
                 <span class="device_number">01</span>
-              <p class="title_for_device_description">
-                Порхает как бабочка, <br>жалит как пчела!
-              </p>
-              <p class="device_description">
-                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-              </p>
-              <a class="link_more">Подробнее</a>
-              <ol class="slider_pagination_list">
-                <li class="slider_pagination_item">
-                  <button class="slider_button slider_button_current" type="button">
-                    <span class="visually_hidden">1 фото</span>
-                  </button>
-                </li>
-                <li class="slider_pagination_item">
-                  <button class="slider_button" type="button">
-                    <span class="visually_hidden">2 фото</span>
-                  </button>
+                <p class="title_for_device_description">
+                  Порхает как бабочка, <br>жалит как пчела!
+                </p>
+                <p class="device_description">
+                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <a class="link_more">Подробнее</a>
+                <ol class="slider_pagination_list">
+                  <li class="slider_pagination_item">
+                    <button class="slider_button slider_button_current" type="button">
+                      <span class="visually_hidden">1 фото</span>
+                    </button>
+                  </li>
+                  <li class="slider_pagination_item">
+                    <button class="slider_button" type="button">
+                      <span class="visually_hidden">2 фото</span>
+                    </button>
+                  </li>
                   <li class="slider_pagination_item">
                     <button class="slider_button" type="button">
                       <span class="visually_hidden">3 фото</span>
                     </button>
-              </ol>
-              <table class="device_values">
-                <tr>
-                  <th class="number_value_item">800 м</th>
-                  <th class="number_value_item">50 м</th>
-                </tr>
-                <tr>
-                  <td class="value_name">Дальность полета</td>
-                  <td class="value_name">Радиус поражения</td>
-                </tr>
-              </table>
+                  </li>
+                </ol>
+                <table class="device_values">
+                  <tr>
+                    <th class="number_value_item">800 м</th>
+                    <th class="number_value_item">50 м</th>
+                  </tr>
+                  <tr>
+                    <td class="value_name">Дальность полета</td>
+                    <td class="value_name">Радиус поражения</td>
+                  </tr>
+                </table>              
               </div>
             </section>
             <section class="variety_device_section">
@@ -238,7 +238,7 @@
         <footer class="page_footer">
           <div class="footer_container">
             <section class="adress_section_footer">
-              <h2 class="adress_titile_footer"><span class="visually_hidden">Адрес</span></h2>
+              <h2 class="visually_hidden">Адрес</h2>
               <img class="logo_footer" src="images/logo_footer.svg" alt="Логотип" width="144" height="36">
               <address class="contacts_address_footer">
               <p class="address_text_footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -246,7 +246,7 @@
             </section>
             <div class="center_footer">
               <section class="link_section">
-                <h2 class="suggestion_titile_footer"><span class="visually_hidden">Наши услуги</span></h2>
+                <h2 class="visually_hidden">Наши услуги</h2>
                 <ul class="link_footer_list">
                   <li class="link_footer_item">
                     <a class="link_footer" href="#">Доставка</a>
@@ -260,7 +260,7 @@
                 </ul>
               </section>
               <section class="media_section">
-                <h2 class="media_titile_footer"><span class="visually_hidden">Соц. медиа</span></h2>
+                <h2 class="visually_hidden">Соц. медиа</h2>
                 <ul class="media_footer_list">
                   <li class="media_footer_item">
                     <a class="media_footer" href="https://www.facebook.com/htmlacademy"><span class="visually_hidden">Фейсбук</span></a>
