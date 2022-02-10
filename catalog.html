@@ -6,18 +6,18 @@
     <title>Каталог</title>
   </head>
   <body>
-    <header class="page_header">
+    <header class="page_header header_inner">
       <div class="header_container">
         <a class="link_logo" href="#">
           <img class="logo_header" src="images/logo_header.svg" alt="Логотип"  width="145" height="36">
-      </a>
-      <section class="main_opportunities main_opportunities_container">
-        <form class="form_for_searching" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="searching">
-            <input type="text" name="search_field" placeholder="Текст поиска">
-            <a class="button_search" href="#">Найти</a>
-          </p>
-        </form>
+        </a>
+        <section class="main_opportunities">
+          <form class="form_for_searching" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="searching">
+              <input type="text" name="search_field" placeholder="Текст поиска">
+              <a class="button_search" href="#">Найти</a>
+            </p>
+          </form>
           <ul class="opportunities_list">
               <li class="opportunity_item">
                   <a class="link_opportunity" href="#">Коля Петухов</a>
@@ -32,8 +32,8 @@
                   <a class="link_opportunity" href="#">Корзина</a>
               </li>
           </ul>
-      </section>
-      <nav class="page_navigation">
+        </section>
+        <nav class="page_navigation">
           <ul class="navigation_list">
               <li class="navigation_item">
                   <a class="link_navigation" href="#">Каталог товаров</a>
@@ -48,7 +48,7 @@
                   <a class="link_navigation" href="#">Контакты</a>
               </li>
           </ul>
-      </nav>
+        </nav>
       </div>
     </header>
     <main class="main_container inner_main">
@@ -144,58 +144,58 @@
                   <li class="product_item">
                       <a class="product_item_link" href="product.html">
                         <img class="product_item_image" src="images/catalog/catalog_1.jpg" alt="" width="360" height="380">
-                        <h3 class="product_item_title">Любительская селфи-палка</h3>
+                        <span class="product_item_title">Любительская селфи-палка</span>
                       </a>
                       <b class="product_item_price">500 ₽</b>
                   </li>
                   <li class="product_item">
                       <a class="product_item_link" href="product.html">
                         <img class="product_item_image" src="images/catalog/catalog_2.jpg" alt="" width="360" height="380">
-                        <h3 class="product_item_title">Профессиональная селфи-палка </h3>
+                        <span class="product_item_title">Профессиональная селфи-палка </span>
                       </a>
                       <b class="product_item_price">1 500 ₽</b>
                   </li>
                   <li class="product_item">
                       <a class="product_item_link" href="product.html">
                         <img class="product_item_image" src="images/catalog/catalog_3.jpg" alt="" width="360" height="380">
-                        <h3 class="product_item_title">Непотопляемая селфи-палка</h3>
+                        <span class="product_item_title">Непотопляемая селфи-палка</span>
                       </a>
                       <b class="product_item_price">2 500 ₽</b>
                   </li>
                   <li class="product_item">
                       <a class="product_item_link" href="product.html">
                         <img class="product_item_image" src="images/catalog/catalog_4.jpg" alt="" width="360" height="380">
-                        <h3 class="product_item_title">Селфи-палка «Следуй за мной»</h3>
+                        <span class="product_item_title">Селфи-палка «Следуй за мной»</span>
                       </a>
                       <b class="product_item_price">1 500 ₽</b>
                   </li>
                 </ul>
-              </div>
-              <button class="button_download_more" type="button">Загрузить ещё</button>
-              <div class="pagination_container">
-                <ul class="pagination_list">
-                  <li class="pagination_item">
-                    <a class="pagination_regulator">Назад</a>
-                  </li>  
-                  <li class="pagination_item">
-                      <a class="pagination_link">1</a>
-                  </li>
-                  <li class="pagination_item">
-                      <a class="pagination_link">2</a>
-                  </li>
-                  <li class="pagination_item">
-                      <a class="pagination_link">3</a>
-                  </li>
-                  <li class="pagination_item">
-                      <a class="pagination_link pagination_disabled">...</a>
-                  </li>
-                  <li class="pagination_item">
-                      <a class="pagination_link">15</a>
-                  </li>
-                  <li class="pagination_item">
-                      <a class="pagination_regulator">Вперёд</a>
-                  </li> 
-                </ul>
+                <button class="button_download_more" type="button">Загрузить ещё</button>
+                <div class="pagination_container">
+                  <ul class="pagination_list">
+                    <li class="pagination_item">
+                      <a class="pagination_regulator">Назад</a>
+                    </li>  
+                    <li class="pagination_item">
+                        <a class="pagination_link">1</a>
+                    </li>
+                    <li class="pagination_item">
+                        <a class="pagination_link">2</a>
+                    </li>
+                    <li class="pagination_item">
+                        <a class="pagination_link">3</a>
+                    </li>
+                    <li class="pagination_item">
+                        <a class="pagination_link pagination_disabled">...</a>
+                    </li>
+                    <li class="pagination_item">
+                        <a class="pagination_link">15</a>
+                    </li>
+                    <li class="pagination_item">
+                        <a class="pagination_regulator">Вперёд</a>
+                    </li> 
+                  </ul>
+                </div>
               </div>
             </section>
           </div>
