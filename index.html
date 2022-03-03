@@ -58,12 +58,14 @@
               <h2 class="about_device"><span class="visually_hidden">О девайсе</span></h2>
               <div class="item_gallery">
                 <img class="slider_image" src="images/slider-1.png" alt="Фото девайса 1" width="560" height="560">
-                <button class="button_slider button_slider_prev" type="button">
-                  <span class="visually_hidden">Предыдущее фото</span>
-                </button>
-                <button class="button_slider button_slider_next" type="button">
-                  <span class="visually_hidden">Следующее фото</span>
-                </button>
+                <div class="slider_container">
+                  <button class="button_slider" type="button">
+                    <span class="visually_hidden">Предыдущее фото</span>
+                  </button>
+                  <button class="button_slider button_slider_right" type="button">
+                    <span class="visually_hidden">Следующее фото</span>
+                  </button>
+                </div>
               </div>
               <div class="item_information">
                 <span class="device_number">01</span>
@@ -73,24 +75,26 @@
                 <p class="device_description">
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                 </p>
-                <a class="link_more" href="#">Подробнее</a>
-                <ol class="slider_pagination_list">
-                  <li class="slider_pagination_item">
-                    <button class="slider_button slider_button_current" type="button">
-                      <span class="visually_hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider_pagination_item">
-                    <button class="slider_button" type="button">
-                      <span class="visually_hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider_pagination_item">
-                    <button class="slider_button" type="button">
-                      <span class="visually_hidden">3 фото</span>
-                    </button>
-                  </li>
-                </ol>
+                <div class="position_container">
+                  <a class="link link_more" href="#">Подробнее</a>
+                  <ol class="slider_pagination_list">
+                    <li class="slider_pagination_item">
+                      <button class="slider_button slider_button_current" type="button">
+                        <span class="visually_hidden">1 фото</span>
+                      </button>
+                    </li>
+                    <li class="slider_pagination_item">
+                      <button class="slider_button" type="button">
+                        <span class="visually_hidden">2 фото</span>
+                      </button>
+                    </li>
+                    <li class="slider_pagination_item">
+                      <button class="slider_button" type="button">
+                        <span class="visually_hidden">3 фото</span>
+                      </button>
+                    </li>
+                  </ol>
+                </div>
                 <table class="device_values">
                   <tr>
                     <th class="number_value_item">800 м</th>
@@ -163,15 +167,15 @@
                   <ul class="suggestion_section_buttons">
                     <li class="suggestion_buttons_item">
                       <h3 class="visually_hidden">Доставка</h3>
-                      <button class="button suggestion_button_current" type="button">Доставка</button>
+                      <button class="suggestion_button_current" type="button">Доставка</button>
                     </li>
                     <li class="suggestion_buttons_item">
                       <h3 class="visually_hidden">Гарантия</h3>
-                      <button class="button suggestion_button" type="button">Гарантия</button>
+                      <button class="button guarantee_button" type="button">Гарантия</button>
                     </li>
                     <li class="suggestion_buttons_item">
                       <h3 class="visually_hidden">Кредит</h3>
-                      <button class="button suggestion_button" type="button">Кредит</button>
+                      <button class="button credit_button" type="button">Кредит</button>
                     </li>
                   </ul>
                 </div>
@@ -194,7 +198,7 @@
                 </div>
                 <b class="important_message">Доставим редкий товар под заказ</b>
                 <div class="inf_icon_wrap">
-                  <svg class="information_icon" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#000"><path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g></svg>
+                  <svg class="information_icon" aria-label="Больше информации" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="info_path" opacity=".5" fill="none"><path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g></svg>
                 </div>
               </a>
             </section>
@@ -212,7 +216,7 @@
                   <li class="transport_company_item">СДИК</li>
                   <li class="transport_company_item">ТоксБерри</li>
                 </ul>
-                <a class="link_more" href="#">Подробнее о нас</a>
+                <a class="link link_about_us" href="#">Подробнее о нас</a>
               </section>
               <section class="contacts_section">
                 <h2 class="contact_information">Контакты</h2>
@@ -230,7 +234,7 @@
                   <li class="contacts_schedule_item">пн—пт: с 10:00 до 22:00</li>
                   <li class="contacts_schedule_item">сб—вс: с 10:00 до 19:00</li>
                 </ul>
-                <button class="button" type="button">Напишите нам</button>
+                <button class="button button_write_us" type="button">Напишите нам</button>
               </section>
             </div>
             <section class="subscription_section">
@@ -285,19 +289,19 @@
                   <li class="media_footer_item">
                     <a class="media_footer" href="#">
                       <span class="visually_hidden">Фейсбук</span>
-                      <svg class="footer_icon" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3Z" fill="#444"/></svg>
+                      <svg class="footer_icon" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="media_path" d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3Z" fill="none"/></svg>
                     </a>
                   </li>
                   <li class="media_footer_item">
                     <a class="media_footer" href="https://www.instagram.com/htmlacademy/">
                       <span class="visually_hidden">Инстаграм</span>
-                      <svg class="footer_icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="#444"/><path d="M14.7 1.3c-.9-.9-2-1.3-3.4-1.3H4.7C1.9 0 0 1.9 0 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3.8-.9 1.3-2 1.3-3.4V4.7c0-1.4-.4-2.6-1.3-3.4ZM8 12.1c-2.2 0-4.1-1.8-4.1-4.1S5.8 3.9 8 3.9c2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1Zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3Z" fill="#444"/></svg>
+                      <svg class="footer_icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="media_path" d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="none"/><path class="media_path" d="M14.7 1.3c-.9-.9-2-1.3-3.4-1.3H4.7C1.9 0 0 1.9 0 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3.8-.9 1.3-2 1.3-3.4V4.7c0-1.4-.4-2.6-1.3-3.4ZM8 12.1c-2.2 0-4.1-1.8-4.1-4.1S5.8 3.9 8 3.9c2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1Zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3Z" fill="none"/></svg>
                     </a>
                   </li>
                   <li class="media_footer_item">
                     <a class="media_footer" href="https://twitter.com/htmlacademy_ru">
                       <span class="visually_hidden">Твиттер</span>
-                      <svg class="footer_icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" fill="#444"/></svg>
+                      <svg class="footer_icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="media_path" d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" fill="none"/></svg>
                     </a>
                   </li>
                 </ul>
