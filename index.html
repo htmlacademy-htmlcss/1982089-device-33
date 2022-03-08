@@ -15,7 +15,7 @@
             <form class="form_for_searching" action="https://echo.htmlacademy.ru/" method="post">
               <p class="searching">
                 <label class="visually_hidden" for="search_field">Текст поиска</label>
-                <input type="text" name="search_field" id="search_field" placeholder="Текст поиска">
+                <input class="searching_field" type="text" name="search_field" id="search_field" placeholder="Поиск по сайту">
                 <a class="button_search" href="#">Найти</a>
               </p>
             </form>
@@ -31,13 +31,74 @@
                   <span class="items_number">2</span>
                   Корзина
                 </a>
-          </ul>
+                <div class="popover_basket">
+                <!-- <div class="popover_basket popover_active"> -->
+                  <div class="basket_content">
+                    <h2 class="visually_hidden">Содержимое корзины</h2>
+                    <ul class="basket_list">
+                      <li class="basket_product">
+                        <a class="item_basket_link" href="#">
+                          <img src="images/catalog/catalog_1.jpg" alt="" width="39px" height="43px">
+                          <span class="item_name">Любительская селфи-палка</span>
+                        </a>
+                        <button class="close_button">
+                          <span class="visually_hidden">Закрыть</span>
+                        </button>
+                      </li>
+                      <li class="basket_product">
+                        <a class="item_basket_link" href="#">
+                          <img src="images/catalog/catalog_2.jpg" alt="" width="39px" height="43px">
+                          <span class="item_name">Профессиональная селфи-палка</span>
+                        </a>
+                        <button class="close_button" type="button">
+                          <span class="visually_hidden">Закрыть</span>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="count_wrapper">
+                      <p class="count_info">Товаров: <span class="count">2</span></p>
+                      <p class="count_info">Сумма: <span class="summ">2000</span>₽</p>
+                    </div>
+                    <a class="open_basket" href="#">Открыть корзину</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </section>
           <nav class="page_navigation">
             <button class="catalog_button" type="button">
               <span>Каталог товаров</span>
               <svg class="catalog_icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7.39H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" fill="#000"/></svg>
             </button>
+            <div class="popover_products_list">
+            <!-- <div class="popover_products_list popover_active"> -->
+              <div class="products_content">
+                <ul class="products_list">
+                  <li class="popover_product">
+                    <a class="link_product link_product_active" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="popover_product">
+                    <a class="link_product" href="#">Моноподы для cелфи</a>
+                  </li>
+                  <li class="popover_product">
+                    <a class="link_product" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="products_list">
+                  <li class="popover_product">
+                    <a class="link_product" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="popover_product">
+                    <a class="link_product" href="#">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="products_list">
+                  <li class="popover_product">
+                    <a class="link_product" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <ul class="navigation_list">
                 <li class="navigation_item">
                     <a class="link_navigation" href="#">Доставка</a>
@@ -198,7 +259,7 @@
                 </div>
                 <b class="important_message">Доставим редкий товар под заказ</b>
                 <div class="inf_icon_wrap">
-                  <svg class="information_icon" aria-label="Больше информации" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="info_path" opacity=".5" fill="none"><path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g></svg>
+                  <svg class="information_icon" aria-label="Больше информации" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="info_path" opacity="" fill="none"><path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g></svg>
                 </div>
               </a>
             </section>
@@ -249,7 +310,7 @@
                   <form class="subscription_form" action="https://echo.htmlacademy.ru/" method="post">
                     <p class="subscription_form_paragraph">
                       <label class="visually_hidden" for="newsletter_email">Почта</label>
-                      <input class="field" type="email" name="newsletter_email" id="newsletter_email" placeholder="Ваш e-mail" required>
+                      <input class="email_field" type="email" name="newsletter_email" id="newsletter_email" placeholder="Ваш e-mail" required>
                       <button class="button_subscription" type="submit">Подписаться</button>
                     </p>
                   </form>
@@ -262,8 +323,11 @@
         <footer class="page_footer">
           <div class="footer_container">
             <section class="adress_section_footer">
+              <a class="link_logo" href="#">
+                <img class="logo_header" src="images/logo_footer.svg" alt="Логотип" width="144" height="36">
+                <span class="visually_hidden">Логотип</span>
+              </a>
               <h2 class="visually_hidden">Адрес</h2>
-              <img class="logo_footer" src="images/logo_footer.svg" alt="Логотип" width="144" height="36">
               <address class="contacts_address_footer">
               <p class="address_text_footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
               </address>
@@ -319,5 +383,52 @@
             </div>
           </div>
         </footer>
+        <div class="modal_container">
+        <!-- <div class="modal_container modal_active"> -->
+          <div class="modal_order">
+            <h2 class="order_title">Доставка под заказ</h2>
+            <button class="close_button_modal">
+              <span class="visually_hidden">Закрыть</span>
+            </button>
+            <form class="order_form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field_group">
+                <label class="input_title" for="name_input">Ваше имя:</label>
+                <input class="form_input name_input" type="text" id="name_input" name="name_input" placeholder="Введите имя" required>
+                <span class="warning_name">Добавьте имя</span>
+              </p>
+              <p class="field_group field_mail">
+                <label class="input_title" for="mail_input">Ваш e-mail:</label>
+                <input class="form_input mail_input" type="email" id="mail_input" name="mail_input" placeholder="Введите email" required>
+                <span class="error_mail">Забавный у вас адрес</span>
+              </p>
+              <p class="field_group">
+                <label class="input_title" for="order_input">Что нужно привезти:</label>
+                <input class="form_input order_input" type="text" id="order_input" name="order_input" placeholder="В свободной форме" required>
+              </p>
+              <p class="field_group">
+                <div class="modal_count_wrapper">
+                  <span class="form_label">
+                    <label class="input_title" for="count_input">Количество:</label>
+                    <span class="tooltip">
+                      <button class="tooltip_toggle" type="button" aria-labelledby="tooltip_label">
+                        <svg class="tooltip_image"  aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="13" fill="#FFE17F"/><path d="M14 7h-2v2h2V7Zm0 4h-2v8h2v-8Z" fill="#000"/></svg>                      </button>
+                      <span class="tooltip_text" role="tooltip" id="tooltip_label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br>к провозу багажа.</span>
+                    </span>
+                  </span>
+                  <div class="count_container">
+                    <button class="count_number less_count" type="button">
+                      <span class="visually_hidden">Уменьшить количество</span>
+                    </button>
+                    <input class="form_input count_input" type="number" id="count_input" name="count_input" value="1" required>
+                    <button class="count_number more_count" type="button">
+                      <span class="visually_hidden">Увеличить количество</span>
+                    </button>
+                  </div>
+                </div>
+              </p>
+              <button class="button button_send" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
     </body>
 </html>
