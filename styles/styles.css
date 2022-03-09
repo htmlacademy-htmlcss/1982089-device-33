@@ -38,6 +38,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    min-width: 1160px;
     min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
@@ -385,7 +386,6 @@ body {
     position: relative;
     top: -150px;
     display: flex;
-    /* justify-content: space-between; */
     width: 1160px;
     margin: 0 auto;
     margin-bottom: -70px;
@@ -1052,9 +1052,13 @@ body {
     background-color: #DCDCDC;
 }
 
-/* .email_field:invalid {
+.email_field:invalid {
     border-color: #FF3D3D;
-} */
+}
+
+.email_field:empty {
+    border-color: #C4C4C4;
+}
 
 .button_subscription {
     padding: 13px 36px;
@@ -2276,6 +2280,19 @@ body {
     line-height: 20px;
     font-weight: 400;
     opacity: 0.3;
+}
+
+.form_input:hover {
+    background-color: #DCDCDC;
+}
+
+.form_input:active {
+    background-color: #EBEBEB;
+}
+
+.form_input:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
 }
 
 .name_input {

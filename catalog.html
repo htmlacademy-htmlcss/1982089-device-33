@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Каталог</title>
   </head>
@@ -15,7 +16,8 @@
         <section class="main_opportunities">
           <form class="form_for_searching" action="https://echo.htmlacademy.ru/" method="post">
             <p class="searching">
-              <input class="searching_field" type="text" name="search_field" placeholder="Текст поиска">
+              <label class="visually_hidden" for="search_field">Поиск</label>
+              <input class="searching_field" type="text" name="search_field" id="search_field" placeholder="Поиск по сайту">
               <a class="button_search" href="#">Найти</a>
             </p>
           </form>
@@ -30,12 +32,8 @@
                   <a class="link_opportunity link_opportunity_compare" href="#">Сравнить</a>
               </li>
               <li class="opportunity_item basket_item">
-                <a class="link_opportunity link_opportunity_basket" href="#">
-                  <span class="items_number">2</span>
-                  Корзина
-                </a>
+                <a class="link_opportunity link_opportunity_basket" href="#"><span class="items_number">2</span>Корзина</a>
                 <div class="popover_basket">
-                <!-- <div class="popover_basket popover_active"> -->
                   <div class="basket_content">
                     <h2 class="visually_hidden">Содержимое корзины</h2>
                     <ul class="basket_list">
@@ -53,7 +51,7 @@
                           <img src="images/catalog/catalog_2.jpg" alt="" width="39px" height="43px">
                           <span class="item_name">Профессиональная селфи-палка</span>
                         </a>
-                        <button class="close_button">
+                        <button class="close_button" type="button">
                           <span class="visually_hidden">Закрыть</span>
                         </button>
                       </li>
@@ -74,7 +72,6 @@
             <svg class="catalog_icon" aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7.39H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" fill="#000"/></svg>
           </button>
           <div class="popover_products_list">
-          <!-- <div class="popover_products_list popover_active"> -->
             <div class="products_content">
               <ul class="products_list">
                 <li class="popover_product">
@@ -151,12 +148,10 @@
                     </div>
                     <div class="range_wrapper_inputs">
                       <label class="catalog_filter_label">
-                        от 
-                        <input class="range_input range_input_min" type="number" value="0" name="min_price"> 
+                        от<input class="range_input range_input_min" type="number" value="0" name="min_price"> 
                       </label>
                       <label class="catalog_filter_label">
-                        до 
-                        <input class="range_input range_input_max" type="number" value="5000" name="max_price"> 
+                        до<input class="range_input range_input_max" type="number" value="5000" name="max_price"> 
                       </label>
                     </div>
                   </div>
@@ -349,7 +344,7 @@
             <h2 class="media_titile_footer"><span class="visually_hidden">Соц. медиа</span></h2>
             <ul class="media_footer_list">
               <li class="media_footer_item">
-                <a class="media_footer" href="#">
+                <a class="media_footer" href="https://www.facebook.com/htmlacademy">
                   <span class="visually_hidden">Фейсбук</span>
                   <svg class="footer_icon" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="media_path" d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3Z" fill="none"/></svg>
                 </a>
@@ -371,8 +366,7 @@
         </div>
         <div class="extra_information">
           <span class="phone-text">
-            Тел.: 
-            <a class="contacts_phone_footer" href="tel:88128121212">+7 (812) 812-12-12</a>
+            Тел.:<a class="contacts_phone_footer" href="tel:88128121212">+7 (812) 812-12-12</a>
           </span>
           <a class="htmlacademy_link" href="https://htmlacademy.ru/">
             <span class="visually_hidden">Лого Html Академии</span>
